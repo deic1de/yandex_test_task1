@@ -1,0 +1,97 @@
+body {
+  counter-reset: ach_num;
+
+}
+
+.achieve {
+  border-radius: 50%;
+  background: #ccc;
+}
+.achieve_main{
+  border: 4px solid red;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+
+}
+.achieve_number{
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 0px;
+  right: -15px;
+  z-index:100;
+}
+.achieve_main::after{
+  content:'';
+  border-radius: 50%;
+  border: inherit;
+  border-top: none;
+  border-left: none;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: -3px;
+  right: -18px;
+
+}
+.achieve__digit{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    counter-increment: ach_num;
+
+}
+
+.achieve__digit::before {
+    content: counter(ach_num);
+}
+
+.achieve__icon{
+  margin: 15px auto;
+    width: 75px;
+    height: 75px;
+}
+
+.achieve__icon_type_anchor {
+    background: url('http://freeiconbox.com/icon/256/34701.png');
+    background-size: cover;
+}
+
+.achieve__icon_type_crowd {
+    background: url('http://freeiconbox.com/icon/256/25262.png');
+    background-size: cover;
+}
+
+.achieve__icon_type_zombie {
+    background: url('http://freeiconbox.com/icon/256/2811.png');
+    background-size: cover;
+}
+
+.achieve__icon_type_home {
+    background: url('http://freeiconbox.com/icon/256/32725.png');
+    background-size: cover;
+}
+
+.achieve__icon_type_print {
+    background: url('http://freeiconbox.com/icon/256/17091.png');
+    background-size: cover;
+}
+
+.achieve_main_color_green {
+    border: 4px solid green;
+}
+
+.achieve_main_color_black {
+    border: 4px solid black;
+}
+
+.achieve_main_color_orange {
+    border: 4px solid orange;
+}
+
+.achieve_main_color_yellow {
+    border: 4px solid yellow;
+}
