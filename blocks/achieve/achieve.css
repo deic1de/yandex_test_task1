@@ -7,7 +7,7 @@ body {
   border-radius: 50%;
   background: #ccc;
 }
-.achieve_main{
+.achieve__main{
   border: 4px solid red;
   width: 100px;
   height: 100px;
@@ -16,7 +16,7 @@ body {
   margin-left: 10px;
 
 }
-.achieve_number{
+.achieve__number{
   width: 36px;
   height: 36px;
   position: absolute;
@@ -24,7 +24,7 @@ body {
   right: -15px;
   z-index:100;
 }
-.achieve_main::after{
+.achieve__main::after{
   content:'';
   border-radius: 50%;
   border: inherit;
@@ -80,18 +80,18 @@ body {
     background-size: cover;
 }
 
-.achieve_main_color_green {
+.achieve__main_color_green {
     border: 4px solid green;
 }
 
-.achieve_main_color_black {
+.achieve__main_color_black {
     border: 4px solid black;
 }
 
-.achieve_main_color_orange {
+.achieve__main_color_orange {
     border: 4px solid orange;
 }
 
-.achieve_main_color_yellow {
+.achieve__main_color_yellow {
     border: 4px solid yellow;
 }
